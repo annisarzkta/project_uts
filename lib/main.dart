@@ -1,11 +1,8 @@
-import 'dart:convert';
-
 import 'package:uts_aplikasibergerak/routes.dart';
 import 'package:uts_aplikasibergerak/screens/splash_screen/splash_screen.dart';
 import 'package:uts_aplikasibergerak/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:http/http.dart' as http;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,25 +43,10 @@ class MyWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MyWidget> {
-  final int _counter = 0;
-  int total = 0;
-  var dataJson;
-
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _getDataFromStrapi();
-  }
-
-  void _getDataFromStrapi() async {
-    var response =
-        await http.get(Uri.parse("http://localhost:1337/api/mahasiswas"));
-    dataJson = await jsonDecode(response.body);
-    print(dataJson["meta"]["pagination"]["total"]);
-    setState(() {
-      total = dataJson["meta"]["pagination"]["total"];
-    });
   }
 
   Widget build(BuildContext context) {

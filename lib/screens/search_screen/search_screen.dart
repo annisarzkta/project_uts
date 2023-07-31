@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
+
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
   static String routeName = 'SearchScreen';
@@ -53,6 +55,9 @@ class _SearchScreenState extends State<SearchScreen> {
           children: [
             TextField(
               // onChanged: (value) => _runFilter(value),
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                    color: kTextBlackColor,
+                  ),
               decoration: InputDecoration(
                 hintText: 'Search...',
                 prefixIcon: const Icon(Icons.search),
@@ -64,7 +69,8 @@ class _SearchScreenState extends State<SearchScreen> {
                 contentPadding: const EdgeInsets.symmetric(
                     horizontal: 10, vertical: 5), // Mengatur padding konten
                 filled: true,
-                fillColor: Colors.white, // Mengatur warna latar belakang
+                fillColor: Colors.white,
+                enabled: true, // Mengatur warna latar belakang
               ),
             ),
             const SizedBox(
