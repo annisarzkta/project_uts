@@ -1,6 +1,6 @@
 import 'package:uts_aplikasibergerak/constants.dart';
-import 'package:uts_aplikasibergerak/screens/assignment_screen/assignment_screen.dart';
-import 'package:uts_aplikasibergerak/screens/datesheet_screen/datesheet_screen.dart';
+import 'package:uts_aplikasibergerak/screens/jobdescription_screen/jobdescription_screen.dart';
+import 'package:uts_aplikasibergerak/screens/timeline_screen/timeline_screen.dart';
 import 'package:uts_aplikasibergerak/screens/event_screen/event_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -56,9 +56,9 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Column(
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         StudentName(
                           studentName: 'Annisa',
                         ),
@@ -102,16 +102,15 @@ class HomeScreen extends StatelessWidget {
                         HomeCard(
                           onPress: () {
                             Navigator.pushNamed(
-                                context, DateSheetScreen.routeName);
+                                context, TimelineScreen.routeName);
                           },
                           icon: 'assets/icons/datesheet.svg',
                           title: 'Timeline',
                         ),
                         HomeCard(
                           onPress: () {
-                            //go to assignment screen here
                             Navigator.pushNamed(
-                                context, AssignmentScreen.routeName);
+                                context, JobDescriptionScreen.routeName);
                           },
                           icon: 'assets/icons/assignment.svg',
                           title: 'Job Description',
@@ -123,7 +122,6 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         HomeCard(
                           onPress: () {
-                            //go to assignment screen here
                             Navigator.pushNamed(context, EventScreen.routeName);
                           },
                           icon: 'assets/icons/event.svg',
@@ -131,7 +129,6 @@ class HomeScreen extends StatelessWidget {
                         ),
                         HomeCard(
                           onPress: () {
-                            //go to assignment screen here
                             Navigator.pushNamed(
                                 context, LogoutScreen.routeName);
                           },

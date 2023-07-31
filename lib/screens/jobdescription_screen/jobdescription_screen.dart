@@ -1,13 +1,13 @@
 import 'package:uts_aplikasibergerak/constants.dart';
-import 'package:uts_aplikasibergerak/screens/assignment_screen/data/assignment_data.dart';
+import 'package:uts_aplikasibergerak/screens/jobdescription_screen/data/jobdescription_data.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 // ignore: unused_import
-import 'widgets/assignment_widgets.dart';
+import 'widgets/jobdescription_widgets.dart';
 
-class AssignmentScreen extends StatelessWidget {
-  const AssignmentScreen({Key? key}) : super(key: key);
-  static String routeName = 'AssignmentScreen';
+class JobDescriptionScreen extends StatelessWidget {
+  const JobDescriptionScreen({Key? key}) : super(key: key);
+  static String routeName = 'JobDescriptionScreen';
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,8 @@ import 'package:uts_aplikasibergerak/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class AssignmentDetailRow extends StatelessWidget {
-  const AssignmentDetailRow(
+class JobDescriptionDetailRow extends StatelessWidget {
+  const JobDescriptionDetailRow(
       {Key? key, required this.title, required this.statusValue})
       : super(key: key);
   final String title;

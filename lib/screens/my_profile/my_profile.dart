@@ -24,7 +24,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
             },
             child: Container(
               padding: const EdgeInsets.only(right: kDefaultPadding / 2),
-              child: Row(
+              child: const Row(
                   // children: [
                   //   const Icon(Icons.report_gmailerrorred_outlined),
                   //   kHalfWidthSizedBox,
@@ -76,16 +76,16 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
               ),
             ),
             sizedBox,
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
+              children: [
                 ProfileDetailRow(title: 'NIM', value: '1102200052'),
                 ProfileDetailRow(title: 'Class of', value: '2020'),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
+              children: [
                 ProfileDetailRow(title: 'Position', value: 'Sekretaris 1'),
                 ProfileDetailRow(
                     title: 'Date of Birth', value: '17 Januari 2002'),

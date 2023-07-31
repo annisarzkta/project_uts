@@ -1,5 +1,5 @@
 {
-  "name": "uts-aplikasibergerak",
+  "name": "project-uts",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,16 +11,16 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.11.5",
-    "@strapi/plugin-users-permissions": "4.11.5",
-    "@strapi/plugin-i18n": "4.11.5",
+    "@strapi/strapi": "4.12.0",
+    "@strapi/plugin-users-permissions": "4.12.0",
+    "@strapi/plugin-i18n": "4.12.0",
     "better-sqlite3": "8.0.1"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "b5342828-f28b-45c5-8489-f556e153f5a8"
+    "uuid": "936a94cb-722a-4aee-ae17-c6fa8f6d6c5b"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
